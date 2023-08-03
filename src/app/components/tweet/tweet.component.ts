@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-tweet',
-  templateUrl: './tweet.component.html',
-  styleUrls: ['./tweet.component.css']
+  templateUrl: './tweet.component.html'
 })
 export class TweetComponent {
 
