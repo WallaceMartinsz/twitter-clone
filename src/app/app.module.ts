@@ -9,6 +9,7 @@ import { TweetComponent } from './components/tweet/tweet.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { MessagesService } from './services/messages.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,9 @@ import { FooterComponent } from './components/footer/footer.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    MessagesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
