@@ -1,10 +1,7 @@
 <div class="w-[600px] bg-white rounded-lg shadow p-6 mb-8">
     <div class="flex justify-center w-full">
-        <div class="flex-shrink-0 mr-5">
-            <div class="flex items-center justify-center font-bold w-12 h-12 bg-gray-300 rounded-full cursor-pointer">
-                W
-            </div>
-        </div>
+        <app-avatar></app-avatar>
+        
         <div class="flex-1">
             <textarea 
             (keyup.ENTER)="sendTweet()"

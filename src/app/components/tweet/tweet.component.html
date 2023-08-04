@@ -1,14 +1,25 @@
-<div class="w-[600px] bg-white rounded-lg shadow p-6 mb-2">
-	<div class="flex justify-start items-center w-full">
-        
-        <div class="flex-shrink-0 mr-5">
-            <div class="flex items-center justify-center font-bold w-12 h-12 bg-gray-300 rounded-full cursor-pointer">
-                W
-            </div>
+<div class="w-[600px] bg-white rounded-lg shadow p-6 mb-2 relative">
+    <div class="flex justify-start items-center w-full">
+      <app-avatar></app-avatar>
+      <div>
+        <p>{{ tweetMessage }}</p>
+      </div>
+    </div>
+  
+    <div class="absolute bottom-4 right-8 flex items-center justify-between">
+        <div class="cursor-pointer">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="hover:fill-red-600" fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
 
-        <div>
-            <p>{{ tweetMessage }}</p>
+        <div class="cursor-pointer ">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="hover:fill-blue-600" d="M14 7H16C18.7614 7 21 9.23858 21 12C21 14.7614 18.7614 17 16 17H14M10 7H8C5.23858 7 3 9.23858 3 12C3 14.7614 5.23858 17 8 17H10M8 12H16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
+
     </div>
-</div>
+    
+  </div>
+  
